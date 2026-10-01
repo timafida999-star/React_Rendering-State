@@ -1,0 +1,50 @@
+// ===== Colors: jungle + volcano palette =====
+$color-bg: #f1f4ec;            // light leaf green
+$color-white: #ffffff;
+$color-text: #233127;          // dark moss
+$color-muted: #66756a;
+$color-border: #dde3d3;
+
+$color-sidebar: #1e3a2f;       // deep jungle green
+$color-sidebar-light: #2a4d3e;
+$color-sidebar-text: #b5cdbf;
+
+$color-accent: #ff8c42;        // lava orange
+$color-accent-hover: #f2711c;
+
+// Status colors
+$color-online: #5bb35b;        // Active: leaf green
+$color-patching: #f2b134;      // Resting: amber
+$color-offline: #d64545;       // Sick: red
+
+// Map of statuses: used in loops to create .card--online, .card--patching...
+$status-colors: (
+  online: $color-online,
+  patching: $color-patching,
+  offline: $color-offline,
+);
+
+// Map of species: used in a loop for the colored badges
+$type-colors: (
+  tr: #e76f51,   // T-Rex
+  tc: #2a9d8f,   // Triceratops
+  vr: #8e6ccb,   // Velociraptor
+  sg: #c9a227,   // Stegosaurus
+  br: #4a90c2,   // Brachiosaurus
+);
+
+// ===== Fonts =====
+$font-main: 'Rubik', Arial, sans-serif;
+$font-title: 'Fredoka', 'Rubik', Arial, sans-serif;  // rounded, playful headings
+
+// ===== Sizes =====
+$radius-small: 8px;
+$radius: 14px;
+$radius-big: 20px;
+
+$sidebar-width: 340px;
+$shadow: 0 4px 16px rgba(30, 58, 47, 0.08);
+
+// ===== Breakpoints =====
+$tablet: 1000px;
+$phone: 600px;

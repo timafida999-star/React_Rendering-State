@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+.switcher {
+  display: flex;
+  padding: 4px;
+  border-radius: $radius-small;
+  background: $color-sidebar;
+
+  &__btn {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: $color-sidebar-text;
+    font-size: 13px;
+
+    &.is-active {
+      background: $color-accent;
+      color: $color-sidebar;
+      font-weight: 500;
+    }
+  }
+}
+
+.lab-note {
+  padding: 10px 12px;
+  border-radius: $radius-small;
+  font-size: 13px;
+
+  &--ok {
+    background: rgba($color-online, 0.15);
+    color: #8ff0e6;
+  }
+
+  &--warn {
+    background: rgba($color-patching, 0.15);
+    color: #ffc987;
+  }
+}

@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.empty {
+  @include card(48px 32px);
+  @include flex(column, center, center, 12px);
+  text-align: center;
+
+  p {
+    color: $color-muted;
+  }
+}
+
+// Image credits under the list
+.credits {
+  font-size: 12px;
+  color: $color-muted;
+  text-align: center;
+}

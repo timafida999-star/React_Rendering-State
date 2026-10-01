@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.app {
+  display: flex;
+  min-height: 100vh;
+
+  @include screen($tablet) {
+    flex-direction: column;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 32px 40px 60px;
+
+  @include flex(column, stretch, flex-start, 24px);
+
+  @include screen($phone) {
+    padding: 20px 16px 40px;
+  }
+}

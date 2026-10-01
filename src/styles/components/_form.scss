@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.form {
+  &__role {
+    padding: 8px 12px;
+    border-radius: $radius-small;
+    background: rgba($color-accent, 0.12);
+    color: $color-accent;
+    font-size: 13px;
+  }
+
+  &__error {
+    color: #ff8a9a;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}

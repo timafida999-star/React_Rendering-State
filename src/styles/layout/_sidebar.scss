@@ -1,0 +1,67 @@
+@use '../abstracts' as *;
+
+.sidebar {
+  width: $sidebar-width;
+  flex-shrink: 0;
+  padding: 28px 24px;
+  background: $color-sidebar;
+  color: $color-white;
+
+  // stays in place while the card list scrolls
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+
+  @include flex(column, stretch, flex-start, 24px);
+
+  @include screen($tablet) {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+}
+
+.brand {
+  @include flex(row, center, flex-start, 12px);
+
+  &__logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: $color-accent;
+    color: $color-sidebar;
+    font-size: 24px;
+
+    @include flex(row, center, center);
+  }
+
+  &__name {
+    font-family: $font-title;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__tagline {
+    font-size: 13px;
+    color: $color-sidebar-text;
+  }
+}
+
+// Dark boxes inside the sidebar (form and lab)
+.panel {
+  background: $color-sidebar-light;
+  border-radius: $radius;
+  padding: 20px;
+
+  @include flex(column, stretch, flex-start, 14px);
+
+  &__title {
+    color: $color-white;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $color-sidebar-text;
+  }
+}
